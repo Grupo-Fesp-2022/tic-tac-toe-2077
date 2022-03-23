@@ -1,2 +1,2 @@
-gcc -o build/main.exe main.c
+gcc -o build/main.exe src/main.c
 .\build\main.exe
