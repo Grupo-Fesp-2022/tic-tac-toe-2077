@@ -1,11 +1,4 @@
-#include <stdio.h>
-
-#include "./variables.c"
-#include "./utils.c"
-#include "../credits/main.c"
-#include "../new_game/main.c"
-
-void start_menu()
+void print_new_game()
 {
     int position = 1;
     int maxPosition = 3;
@@ -13,48 +6,45 @@ void start_menu()
 
     while (1)
     {
+
         clear();
         change_color(143);
         printf("                                                  \n");
         printf("                                                  \n");
-        
+
         printf("                 ");
         change_color(142);
         printf("Tic Tac Toe 2077");
         change_color(143);
         printf("                 \n");
 
+        printf("                  Modos de jogo                   \n");
+
         printf("                                                  \n");
         printf("                                                  \n");
         printf("                                                  \n");
 
-        printf("                     ");
+        printf("                       ");
         change_color_select(position, 1);
-        printf("Novo Jogo");
+        printf("Coop");
         change_color(143);
-        printf("                    \n");
-
-        printf("                                                  \n");
-        printf("                                                  \n");
-
-        printf("                     ");
-        change_color_select(position, 2);
-        printf("Creditos");
-        change_color(143);
-        printf("                     \n");
+        printf("                       \n");
 
         printf("                                                  \n");
         printf("                                                  \n");
 
         printf("                       ");
-        change_color_select(position, 3);
-        printf("Sair");
+        change_color_select(position, 2);
+        printf("Solo");
         change_color(143);
         printf("                       \n");
 
         printf("                                                  \n");
         printf("                                                  \n");
         printf("                                                  \n");
+        printf("                                                  \n");
+        printf("                                                  \n");
+
         change_color(-1);
 
         newPosition = handle_keyboard(position, maxPosition);
@@ -77,6 +67,10 @@ void start_menu()
             default:
                 position = 1;
             }
+        }
+        else if (newPosition == BACKSPACE_PRESSED)
+        {
+            break;
         }
         else
         {

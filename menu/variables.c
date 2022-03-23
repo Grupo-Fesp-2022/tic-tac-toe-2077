@@ -1,0 +1,2 @@
+#define ENTER_PRESSED 0.1
+#define BACKSPACE_PRESSED 0.2
