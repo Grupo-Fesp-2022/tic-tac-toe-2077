@@ -1,6 +1,8 @@
 void print_credits()
 {
     clear();
+    change_color(143);
+
     print_centralized("", BOARD_WIDTH, 143, 143);
     print_centralized("", BOARD_WIDTH, 143, 143);
 
@@ -24,6 +26,8 @@ void print_credits()
 
     print_centralized("", BOARD_WIDTH, 143, 143);
     print_centralized("", BOARD_WIDTH, 143, 143);
-    print_centralized("", BOARD_WIDTH, 143, -1);
+    print_centralized("", BOARD_WIDTH, 143, 143);
+    change_color(-1);
+
     pause();
 }

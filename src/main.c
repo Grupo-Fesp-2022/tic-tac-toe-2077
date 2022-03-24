@@ -8,8 +8,10 @@
 #include "utils/main.c"
 #include "pages/main.c"
 
+
 int main(int argc, char const *argv[])
 {
-    star_game();    
+    star_game();
+ 
     return 0;
 }

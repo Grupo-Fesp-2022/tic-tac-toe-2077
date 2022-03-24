@@ -7,7 +7,7 @@ void select_option_new_game(int option)
         break;
 
     case SOLO_OPTION:
-        print_credits();
+        start_game_solo();
         break;
 
     case QUIT_OPTION:

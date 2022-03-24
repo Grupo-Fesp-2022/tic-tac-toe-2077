@@ -5,6 +5,7 @@
 void print_menu(int selected_option)
 {
     clear();
+    change_color(143);
     print_centralized("", BOARD_WIDTH, 143, 143);
     print_centralized("", BOARD_WIDTH, 143, 143);
 
@@ -34,7 +35,9 @@ void print_menu(int selected_option)
 
     print_centralized("", BOARD_WIDTH, 143, 143);
     print_centralized("", BOARD_WIDTH, 143, 143);
-    print_centralized("", BOARD_WIDTH, 143, -1);
+    print_centralized("", BOARD_WIDTH, 143, 143);
+    change_color(-1);
+
 }
 
 void select_option_menu(int option)
