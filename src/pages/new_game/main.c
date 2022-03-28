@@ -56,6 +56,7 @@ void print_new_game()
         else if (key_pressed == SPACE || key_pressed == ENTER)
         {
             select_option_new_game(selected_option);
+            break;
         }
         else if (key_pressed == ESC || key_pressed == BACKSPACE)
         {

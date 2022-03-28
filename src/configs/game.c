@@ -12,7 +12,8 @@ enum options
 // TODO : Pensar em um nome
 enum
 {
-    X,
-    O,
-    EMPTY
+    X = -1,
+    EMPTY,
+    O = 1,
+    TIE
 };
