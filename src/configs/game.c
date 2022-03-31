@@ -14,6 +14,6 @@ enum
 {
     X = -1,
     EMPTY,
-    O = 1,
+    O,
     TIE
 };

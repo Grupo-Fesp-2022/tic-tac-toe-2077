@@ -9,6 +9,21 @@ void is_selected(int cursor[2], int x, int y)
         change_color(143);
     }
 }
+int has_plays(int board[3][3])
+{
+    int has_space = 0;
+    for (int y = 0; y < 3; y++)
+    {
+        for (int x = 0; x < 3; x++)
+        {
+            if (board[x][y] == EMPTY)
+            {
+                has_space = 1;
+            }
+        }
+    }
+    return has_space;
+}
 
 int has_winner(int board[3][3])
 {
@@ -57,7 +72,10 @@ int has_winner(int board[3][3])
         return O;
     }
     // Verificando empate
-    // TODO : implementar
+    if (!has_plays(board))
+    { 
+        return TIE;
+    }
 
     return EMPTY;
 }

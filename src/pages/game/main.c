@@ -1,5 +1,5 @@
 #include "core.c"
-void start_game_solo()
+void start_game_coop()
 {
     int board[3][3] = {
         {EMPTY, EMPTY, EMPTY},
