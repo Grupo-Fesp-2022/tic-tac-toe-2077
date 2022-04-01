@@ -73,7 +73,7 @@ int has_winner(int board[3][3])
     }
     // Verificando empate
     if (!has_plays(board))
-    { 
+    {
         return TIE;
     }
 
@@ -117,4 +117,83 @@ void print_board(int board[3][3], int cursor[2])
             printf("                     --+---+--                    \n");
         }
     }
+}
+int change_turn(int turn)
+{
+    return turn == X ? O : X;
+}
+
+int get_score(int board[3][3], int turn)
+{
+    if (has_winner(board) == turn)
+    {
+        return 10;
+    }
+    if (has_winner(board) == change_turn(turn))
+    {
+        return -10;
+    }
+    return 0;
+}
+
+int *get_computer_move(int board[3][3], int turn, int *depth)
+{
+    int move_list[8][2];
+    int move_count = 0;
+    int best_move[2];
+    int score_list[8][2];
+    int best_score[2];
+    int score;
+
+    score = get_score(board, O);
+    if (score)
+        return score - *depth;
+
+    // preenchendo move_list
+    for (int y = 0; y < 3; y++)
+
+    {
+        for (int x = 0; x < 3; x++)
+        {
+            if (board[x][y] == EMPTY)
+            {
+                move_count++;
+                move_list[move_count][0] = x;
+                move_list[move_count][1] = y;
+            }
+        }
+    }
+    int move[2];
+    for (int y = 0; y < 3; y++)
+    {
+        for (int x = 0; x < 3; x++)
+        {
+            move = move_list[x][y];
+            board[move[0]][move[1]] = turn;
+
+            (*depth)++;
+            score_list[x][y] = get_computer_move(board, change_turn(turn), depth);
+            (*depth)--;
+
+            board[move[0]][move[1]] = EMPTY;
+        }
+    }
+    int max[2] = get_max_value(score_list);
+    int min[2] = get_min_value(score_list);
+
+    if (turn == O)
+    {
+        best_score[0] = max[0];
+        best_score[1] = max[1];
+    }
+    if (turn == X)
+    {
+        best_score[0] = min[0];
+        best_score[1] = min[1];
+    }
+
+    if (*depth != 0)
+        return best_score;
+    else
+        return best_move;
 }

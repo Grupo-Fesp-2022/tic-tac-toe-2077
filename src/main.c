@@ -12,6 +12,5 @@
 int main(int argc, char const *argv[])
 {
     star_game();
- 
     return 0;
 }
