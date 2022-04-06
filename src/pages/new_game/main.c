@@ -1,14 +1,19 @@
 #include "../game/main.c"
 #include "core.c"
 
-
+/**
+ * @brief Função que da print na tela de "novo jogo"
+ */
 void print_new_game()
 {
+    // variáveis que guardam qual tecla foi precionada e qual a opção selecionada
     int key_pressed, selected_option;
     selected_option = COOP_OPTION;
 
+    // loop principal do menu
     while (1)
     {
+        // dando o print na tela
         clear();
         change_color(143);
 
@@ -41,6 +46,8 @@ void print_new_game()
         print_centralized("", BOARD_WIDTH, 143, 143);
         change_color(-1);
 
+        // lógica para verificar o que fazer quando o usuário apertar alguma
+        // tecla
         key_pressed = getch();
 
         if (key_pressed == ARROW_DOWN || key_pressed == KEY_S)
