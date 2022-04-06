@@ -1,4 +1,3 @@
-// https://github.com/AlexanderAgd/CLIST
 /******************************************/
 /*                                        */
 /*        Alexander Agdgomlishvili        */
