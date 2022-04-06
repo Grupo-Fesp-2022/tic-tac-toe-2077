@@ -18,7 +18,6 @@ void change_color(int color)
 
 /**
  * @brief Da um print em todas as cores possíveis
- *
  */
 void print_colors()
 {
