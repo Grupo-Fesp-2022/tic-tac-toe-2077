@@ -1,3 +1,7 @@
+/**
+ * @brief Mapeamento das telas do teclado
+ */
+
 #define ESC 27
 #define ENTER 13
 #define SPACE 32
