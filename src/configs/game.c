@@ -9,7 +9,7 @@ enum options
     COOP_OPTION,
     SOLO_OPTION
 };
-// TODO : Pensar em um nome
+
 enum
 {
     X = -1,
