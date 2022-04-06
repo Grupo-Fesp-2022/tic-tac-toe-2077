@@ -1,3 +1,6 @@
+/**
+ * @brief unção que printa a tela de créditosF
+ */
 void print_credits()
 {
     clear();
