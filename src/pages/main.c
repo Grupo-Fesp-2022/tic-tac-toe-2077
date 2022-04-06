@@ -2,7 +2,6 @@
 
 /**
  * @brief Função principal que inicia o jogo
- * 
  */
 void star_game()
 {

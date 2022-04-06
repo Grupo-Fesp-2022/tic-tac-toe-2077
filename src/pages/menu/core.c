@@ -1,7 +1,11 @@
 #include "../credits/main.c"
 #include "../new_game/main.c"
 
-
+/**
+ * @brief Função que da print no menu inicial do jogo
+ *
+ * @param selected_option Opção selecionada no momento
+ */
 void print_menu(int selected_option)
 {
     clear();
@@ -37,11 +41,16 @@ void print_menu(int selected_option)
     print_centralized("", BOARD_WIDTH, 143, 143);
     print_centralized("", BOARD_WIDTH, 143, 143);
     change_color(-1);
-
 }
 
+/**
+ * @brief Função que é chamada quando o usuário entra em alguma opção no menu
+ * 
+ * @param option Qual opção foi clicada
+ */
 void select_option_menu(int option)
 {
+    // lógica para verificar qual opção foi clicada
     switch (option)
     {
     case NEW_GAME_OPTION:

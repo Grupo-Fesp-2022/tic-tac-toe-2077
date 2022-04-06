@@ -1,13 +1,20 @@
 #include "./core.c"
 
+/**
+ * @brief Função que inicia o menu inicial
+ */
 void start_menu()
 {
+    // variável que guarda a opção que está selecionada no menu
     int selected_option = NEW_GAME_OPTION;
 
+    // loop principal do menu
     while (1)
     {
+        // dando print no menu, com a opção selecionada
         print_menu(selected_option);
 
+        // lógica para cada tecla precionada
         switch (getch())
         {
         case ARROW_DOWN:
