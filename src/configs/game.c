@@ -24,11 +24,3 @@ enum
     TIE
 };
 
-/**
- * @brief Posição no tabuleiro
- */
-struct position
-{
-    int x;
-    int y;
-} position;
