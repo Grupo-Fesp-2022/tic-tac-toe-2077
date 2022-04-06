@@ -1,35 +1,29 @@
-int *get_max_value(int matrix[8][2])
+int *get_max_value(CList *list)
 {
-    int max = matrix[0][0];
+    void *max = list->at(list, 0);
 
-    for (int y = 0; y < 2; y++)
+    for (int i = 0; i < list->count(list); i++)
     {
-
-        for (int x = 0; x < 8; x++)
+        if (list->at(list, i) > max)
         {
-            if (matrix[x][y] >= max)
-            {
-                max = matrix[x][y];
-            }
+            max = list->at(list, i);
         }
     }
+
     return max;
 }
 
-int *get_min_value(int matrix[8][2])
+int *get_min_value(CList *list)
 {
-    int min = matrix[0][0];
+    void *min = list->at(list, 0);
 
-    for (int y = 0; y < 2; y++)
+    for (int i = 0; i < list->count(list); i++)
     {
-
-        for (int x = 0; x < 8; x++)
+        if (list->at(list, i) <= min)
         {
-            if (matrix[x][y] <= min)
-            {
-                min = matrix[x][y];
-            }
+            min = list->at(list, i);
         }
     }
+
     return min;
 }
