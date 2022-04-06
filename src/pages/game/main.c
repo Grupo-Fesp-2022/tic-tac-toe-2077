@@ -11,7 +11,7 @@ void start_game_coop()
         {EMPTY, EMPTY, EMPTY},
         {EMPTY, EMPTY, EMPTY},
     };
-    int key_pressed;        // Qual tecla que foi precionada
+    int key_pressed;        // Qual tecla que foi pressionada
     int cursor[2] = {0, 2}; // o ponteiro (X, Y) no tabuleiro
     int turn = X;           // De quem é a vez de jogar
     /*
