@@ -1,6 +1,6 @@
 /**
  * @brief Função que printa o texto centralizado
- * 
+ *
  * @param string O texto que irá ser centralizado
  * @param length O tamanho da linha final
  * @param color_before Código da cor, que irá ser usada para dar print no texto

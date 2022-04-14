@@ -31,10 +31,10 @@ void print_colors()
 
 /**
  * @brief Função que retorna a cor usada para selecionar uma opção
- * 
+ *
  * @param selected_option O número da opção selecionada atualmente
  * @param option_number O número da opção que será usado para saber se ela está selecionada ou não
- * @return int 
+ * @return int
  */
 int get_color_from_option(int selected_option, int option_number)
 {

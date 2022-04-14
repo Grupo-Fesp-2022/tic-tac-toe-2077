@@ -12,7 +12,7 @@ void start_game_coop()
         {EMPTY, EMPTY, EMPTY},
     };
     int key_pressed;        // Qual tecla que foi pressionada
-    int cursor[2] = {0, 2}; // o ponteiro (X, Y) no tabuleiro
+    int cursor[2] = {1, 1}; // o ponteiro (X, Y) no tabuleiro
     int turn = X;           // De quem é a vez de jogar
     /*
      * Variável que guarda se há um vencedor.
@@ -44,9 +44,11 @@ void start_game_coop()
             {
             case X:
                 print_centralized("Jogador 1 ganhou!!!", BOARD_WIDTH, 138, 143);
+                SCORES[T_X] = SCORES[T_X] + 1;
                 break;
             case O:
                 print_centralized("Jogador 2 ganhou!!!", BOARD_WIDTH, 138, 143);
+                SCORES[T_O] = SCORES[T_O] + 1;
                 break;
             case TIE:
                 print_centralized("Empate!", BOARD_WIDTH, 140, 143);
@@ -156,9 +158,11 @@ void start_game_solo()
             {
             case X:
                 print_centralized("Voce ganhou!!!", BOARD_WIDTH, 138, 143);
+                SCORES[T_X] = SCORES[T_X] + 1;
                 break;
             case O:
                 print_centralized("Computador ganhou!!!", BOARD_WIDTH, 138, 143);
+                SCORES[T_C] = SCORES[T_C] + 1;
                 break;
             case TIE:
                 print_centralized("Empate!", BOARD_WIDTH, 140, 143);

@@ -24,3 +24,13 @@ enum
     TIE
 };
 
+/**
+ * @brief Enum que será usado para acessar o array de pontuação
+ * 
+ */
+enum
+{
+    T_X,  // Turn X -> Jogador 1
+    T_O,  // Turn O -> Jogador 2
+    T_C  // Turn Computer -> Maquina
+};
