@@ -34,11 +34,14 @@ void print_new_game()
 
         print_centralized("", BOARD_WIDTH, 143, 143);
         print_centralized("", BOARD_WIDTH, 143, 143);
+        print_centralized("", BOARD_WIDTH, 143, 143);
 
         print_centralized("Solo", BOARD_WIDTH,
                           get_color_from_option(selected_option, SOLO_OPTION),
                           143);
 
+        print_centralized("", BOARD_WIDTH, 143, 143);
+        print_centralized("", BOARD_WIDTH, 143, 143);
         print_centralized("", BOARD_WIDTH, 143, 143);
         print_centralized("", BOARD_WIDTH, 143, 143);
         print_centralized("", BOARD_WIDTH, 143, 143);

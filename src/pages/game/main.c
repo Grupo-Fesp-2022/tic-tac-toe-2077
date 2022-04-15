@@ -67,6 +67,9 @@ void start_game_coop()
         print_centralized("", BOARD_WIDTH, 143, 143);
         print_centralized("", BOARD_WIDTH, 143, 143);
         print_centralized("", BOARD_WIDTH, 143, 143);
+        print_centralized("", BOARD_WIDTH, 143, 143);
+        print_centralized("", BOARD_WIDTH, 143, 143);
+        print_centralized("", BOARD_WIDTH, 143, 143);
         change_color(-1);
 
         // se tiver um ganhar, vai pausar a tela
@@ -177,6 +180,9 @@ void start_game_solo()
         print_centralized("", BOARD_WIDTH, 143, 143);
         print_centralized("", BOARD_WIDTH, 143, 143);
         print_board(board, cursor);
+        print_centralized("", BOARD_WIDTH, 143, 143);
+        print_centralized("", BOARD_WIDTH, 143, 143);
+        print_centralized("", BOARD_WIDTH, 143, 143);
         print_centralized("", BOARD_WIDTH, 143, 143);
         print_centralized("", BOARD_WIDTH, 143, 143);
         print_centralized("", BOARD_WIDTH, 143, 143);

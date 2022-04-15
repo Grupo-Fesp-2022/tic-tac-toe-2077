@@ -122,6 +122,8 @@ void print_menu(int selected_option)
     print_centralized("", BOARD_WIDTH, 143, 143);
     print_centralized("", BOARD_WIDTH, 143, 143);
     print_centralized("", BOARD_WIDTH, 143, 143);
+    print_centralized("", BOARD_WIDTH, 143, 143);
+    print_centralized("", BOARD_WIDTH, 143, 143);
     change_color(-1);
 }
 

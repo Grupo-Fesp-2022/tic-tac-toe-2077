@@ -15,10 +15,12 @@ void print_credits()
 
     print_centralized("", BOARD_WIDTH, 143, 143);
     print_centralized("", BOARD_WIDTH, 143, 143);
+    print_centralized("", BOARD_WIDTH, 143, 143);
 
     print_centralized("Projeto feito na faculdade Uniamerica 2022", BOARD_WIDTH,
                       143, 143);
 
+    print_centralized("", BOARD_WIDTH, 143, 143);
     print_centralized("", BOARD_WIDTH, 143, 143);
     print_centralized("", BOARD_WIDTH, 143, 143);
 
