@@ -22,13 +22,13 @@ void print_new_game()
 
         print_centralized("Tic Tac Toe 2077", BOARD_WIDTH, 142, 143);
 
-        print_centralized("Modos de jogo", BOARD_WIDTH, 143, 143);
+        print_centralized("Estilos  de jogo", BOARD_WIDTH, 143, 143);
 
         print_centralized("", BOARD_WIDTH, 143, 143);
         print_centralized("", BOARD_WIDTH, 143, 143);
         print_centralized("", BOARD_WIDTH, 143, 143);
 
-        print_centralized("Coop", BOARD_WIDTH,
+        print_centralized("Multiplayer", BOARD_WIDTH,
                           get_color_from_option(selected_option, COOP_OPTION),
                           143);
 
@@ -36,7 +36,7 @@ void print_new_game()
         print_centralized("", BOARD_WIDTH, 143, 143);
         print_centralized("", BOARD_WIDTH, 143, 143);
 
-        print_centralized("Solo", BOARD_WIDTH,
+        print_centralized("Singleplayer", BOARD_WIDTH,
                           get_color_from_option(selected_option, SOLO_OPTION),
                           143);
 
