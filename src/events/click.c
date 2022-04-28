@@ -1,4 +1,9 @@
-void on_btn1_clicked(GtkButton *button)
+void on_btn_new_game_clicked(GtkButton *button)
 {
-    gtk_label_set_text(GTK_LABEL(lbl1), (const gchar *) "Olá mundo!");
+    puts("on_btn_new_game_clicked");
+}
+
+void on_btn_creditos_clicked(GtkButton *button)
+{
+    puts("on_btn_creditos_clicked");
 }
