@@ -10,7 +10,6 @@ int main(int argc, char **argv)
 
     init_widgets();
 
-    g_signal_connect(window, "destroy", G_CALLBACK(gtk_main_quit), NULL);
     gtk_builder_connect_signals(builder, NULL);
 
     // mostrando a tela e iniciando o loop principal

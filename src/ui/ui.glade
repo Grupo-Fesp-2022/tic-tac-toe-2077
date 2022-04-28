@@ -41,6 +41,7 @@ Author: Leonardo Lima, Luiz Weinhardt, Rafael Alves, Willian Calvario
     <property name="window-position">center</property>
     <property name="destroy-with-parent">True</property>
     <property name="urgency-hint">True</property>
+    <signal name="destroy" handler="gtk_main_quit" swapped="no"/>
     <child>
       <object class="GtkFixed">
         <property name="visible">True</property>
