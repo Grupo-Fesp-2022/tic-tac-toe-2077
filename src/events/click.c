@@ -25,11 +25,12 @@ void on_btn_new_single_clicked(GtkButton *button)
 
 void on_btn_single_clicked(GtkButton *button)
 {
-    if (strcmp(gtk_widget_get_name(GTK_WIDGET(button)), "0") == 0)
+    if (strcmp(gtk_widget_get_name(GTK_WIDGET(button)), "0") == 0 && gtk_widget_get_sensitive(GTK_WIDGET(button)))
     {
         gtk_widget_set_name(GTK_WIDGET(button), get_turn());
         const GtkWidget *const lbl = gtk_bin_get_child(GTK_BIN(button));
         gtk_label_set_text(GTK_LABEL(lbl), get_turn());
+        gtk_widget_set_sensitive(GTK_WIDGET(button), FALSE);
         change_turn();
     }
     // gtk_label_set_text(GTK_LABEL(lbl_single), get_turn());
